@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Funny Face 2015</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/text.css" />
+<link rel="stylesheet" href="css/960.css" />
+<link rel="stylesheet" href="css/demo.css" />
+<link rel="stylesheet" href="css/party.css" />
+
+  <!-- This is css for tab !-->
+  <style>
+
+    .tabs {
+
+      display: none;
+    }
+
+    .tabs.active {
+
+      display: block !important;
+    }
+    
+    #picture img {
+
+      position: absolute;
+    }
+    
+
+  </style>
+</head>
+<body>
+
+<div class="container_12">
+  <div class="grid_3">
+    <img src="images/LOGO_FunnyFace.png" alt="Funny Face 2015" class="logo"/>
+  </div>
+
+  <!-- Set the tab accessories -->
+
+  <div class="grid_9 center">
+    <p class="instructions">Play with the available acessories in your face.</p>
+        <div id="menu_1" onclick="tab('glasses')" class="menuitem" title="Glasses"></div>
+        <div id="menu_2" onclick="tab('beards')" class="menuitem" title="Beards"></div>
+        <div id="menu_3" onclick="tab('hats')" class="menuitem" title="Hats"></div>
+  </div>
+  <div class="clear"></div>
+
+  <div class="grid_12 submenu center  tabs active" id="beards">
+	<img src="images/accessories/beard_1.png"  class="accessories" alt="beards">
+	<img src="images/accessories/beard_2.png"  class="accessories" alt="beards">
+	<img src="images/accessories/beard_3.png" class="accessories" alt="beards">
+	<img src="images/accessories/beard_4.png" class="accessories" alt="beards">
+  </div>
+
+  <div class="grid_12 submenu center  tabs" id="hats">
+	<img src="images/accessories/hat_1.png"  class="accessories" alt="hats">
+    <img src="images/accessories/hat_2.png"  class="accessories" alt="hats">
+    <img src="images/accessories/hat_3.png"  class="accessories" alt="hats">
+  </div>
+
+  <div class="grid_12 submenu center  tabs" id="glasses">
+	<img src="images/accessories/glasses_1.png" class="accessories" alt="glasses">
+	<img src="images/accessories/glasses_2.png" class="accessories" alt="glasses">
+	<img src="images/accessories/glasses_3.png" class="accessories" alt="glasses">
+  </div>
+
+
+  <div class="clear"></div>
+
+  <div class="grid_4 prefix_4 suffix_4">
+    <p id="drop">
+      Drop your face file here <br/>
+      <span class="attention">Only JPG file. Maximum 300 Kb.</span>
+    </p>
+  </div>
+  <div class="clear"></div>
+
+
+  <div class="grid_2 prefix_3 suffix_2 center">Size</div>
+  <div class="grid_2 suffix_3 center">Rotate</div>
+  <div class="clear"></div>
+
+  <div class="grid_1 prefix_3"><button id="plus" class="button">+</button></div>
+  <div class="grid_1 suffix_2"><button id="minus" class="button">-</button></div>
+  <div class="grid_1"><button id="left" class="button">Left</button></div>
+  <div class="grid_1 suffix_3"><button id="right" class="button">Right</button></div>
+  <div class="clear"></div>
+
+  <div class="grid_6 prefix_3 suffix_3">
+		<div id="picture" class="picture">
+
+          <!-- Remove This
+          <div id="imageFace" class="picture ui-droppable"></div>
+          -->
+
+        </div>
+  </div>
+  <div class="clear"></div>
+
+  <div class="grid_4 prefix_4 suffix_4 center">
+    <p><button id="save" class="button" onClick="javascript:savePicture();">Save Picture</button></p>
+  </div>
+  <div class="clear"></div>
+  <div class="grid_12">
+    <p>
+      Funny Face - 43º WorldSkills Competition - São Paulo - 2015. All rights reserved.
+    </p>
+  </div>
+  <div class="clear"></div>
+</body>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/ImageLayer.js"></script>
+<script src="js/tab.js"></script>
+</html>
