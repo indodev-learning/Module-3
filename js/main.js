@@ -36,6 +36,7 @@ $(document).ready(function(){
 		}
 	});
 
+	// When the image enter the place
 	dropImage.on('dragenter', function (e){
 
 		e.stopPropagation();
@@ -45,6 +46,7 @@ $(document).ready(function(){
 		$(this).css('background', 'limegreen');
 	});
 
+	// When the image over the place
 	dropImage.on('dragover', function (e) {
 
 		e.stopPropagation();
@@ -53,6 +55,7 @@ $(document).ready(function(){
 		$(this).css('background', 'limegreen');
 	});
 
+	// When the image leave the place
 	dropImage.on('dragleave', function (e) {
 
 		e.stopPropagation();
@@ -61,6 +64,7 @@ $(document).ready(function(){
 		$(this).css('background', 'white');
 	});
 
+	// When the image dropped to the place
 	dropImage.on('drop', function (e) {
 
 		$(this).css('border', '2px dotted #0B85A1');
@@ -74,7 +78,6 @@ $(document).ready(function(){
 			reader = new FileReader();
 
 		reader.addEventListener('load', function(e){
-
 
 			dropPlace.append("<img src='"+e.target.result+"'></img>");
 		});
